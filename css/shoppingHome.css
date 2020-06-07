@@ -1,0 +1,28 @@
+body{
+	height: 100%;
+	line-height: 1;
+	background: blue none repeat;
+}
+.container {
+  margin: auto;
+  width: 80%;
+}
+nav{
+    background: rgb(248, 248, 248) none repeat scroll 0 0;
+	font-size: 16px;
+	padding: 20px 0 40px;
+}
+.navbar-left{
+	float: left;
+}
+.navbar-right{
+	float: right;
+}
+ul {
+  /* list-style-type: none;  */
+  margin: 0;
+  padding: 0;
+}
+li{
+	display: inline;<!-- To display the elements in one line-->
+}
