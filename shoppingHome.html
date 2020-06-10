@@ -5,21 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- to resize the screen for Mobile device resolution -->
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="stylesheet" type="text/css" href="css/shoppingHome.css"><!-- Connecting the css file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- Connecting the bootstrap file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- importing the jQuery library -->
     <title>Shopping | Home</title><!-- Title  -->
 </head>
 <body>
-     <nav>
-      <div class="container">
-        <ul class="navbar-left">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-        </ul> <!--end navbar-left -->
+     <!-- Header Area -->
+     <div id="wrapperHeader">
+          <div id="header">
+               <img id="headerimg" src="resources/img/header.png" alt="header" />
+          </div>
+     </div>
+     <!-- Menu Area -->
+     <div class="container subheader">
+          <div class="row">
+               <div class="col-sm-4 socialMedia_cls">
+                    <ul>
+                         <li>fb</li>
+                         <li>twitter</li>
+                         <li>insta</li>
+                    </ul>
+               </div>
+               <div class="col-sm-4 navigationDetails_cls">
+                  <ul class="navbar-left">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                  </ul> <!--end navbar-left -->
+               </div>
+               <div class="col-sm-4 contactDetails_cls">
+                    <p>+91 9042911030</p>
+               </div>
+          </div>
+     </div>
+     <div class="offer_cls">
+          <div class="row">
+               <div class="col-sm-4 offer1_cls">
+                    <p>Free Shipping & Returns</p>
+                    <p class="promo">Buy Now</p>
+               </div>
+               <div class="col-sm-4 offer2_cls">
+                    <p>20% Discount for all dresses</p>
+                    <p class="promo">Use Code: PROMO20</p>
+               </div>
+               <div class="col-sm-4 offer3_cls">
+                    <p>20% Discount for students</p>
+                    <p class="promo">Use Code: PROMOSTUDENT</p>
+               </div>
 
-        <ul class="navbar-right">
-          <li><a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a></li>
-        </ul> <!--end navbar-right -->
-      </div> <!--end container -->
-     </nav>
-
+          </div>
+     </div>
 </body>
