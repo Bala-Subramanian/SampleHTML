@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- to resize the screen for Mobile device resolution -->
+     <link rel="stylesheet" type="text/css" href="css/signin.css"> <!-- Connecting the css file -->
+     <script src="js/signin.js"></script> <!-- Connecting the js file -->
+     <title>Login</title>  <!-- this appears on the titlebar -->
+     </head>
+     <body onload="onLoad_signin()">
+
+     <form id="signinform">
+       <div class="container">
+         <h1>Login Form</h1>
+         <p>Please enter your credentials to login.</p>
+         <hr>
+         <label for="email"><b>Email</b></label>
+         <input type="text" placeholder="Enter Email" name="email" required>
+
+         <label for="psw"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" name="psw" required>
+
+         <label for="invalid" id="invalid" hidden=true>You have entered invalid credentials. Kindly re-enter the credentials.</label>
+         <hr>
+
+         <button type="submit" class="signinbtn" onclick="onClickSignin()">Sign In</button>
+       </div>
+       <div class="container registercls">
+            <p>New User? <a href="register.html">Click here to Register</a>.</p> <!-- Navigates to other screen -->
+       </div>
+     </form>
+
+     </body>
+</html>
