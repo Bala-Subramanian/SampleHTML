@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/jstopics.css">
+    <script src="js/jstopics.js"></script>
+
+    <title>Learn JS</title>
+</head>
+<body>
+    <div>
+        <p>Learn "this" keyword, filter, map and reduce</p>
+        <p>ES6 -> let & const, arrow functions, template literals, object literals, default parameters, 
+            rest and spread operators and destructing assignment.
+        </p>
+        <div><h1>Arrow Function </h1></div>
+        <div>
+            <p><b>Using Normal function</b></p>
+            <p>
+                var getRegValue = function (p1){
+                    return 10*p1;
+                }<br>
+                console.log(getRegValue(2));
+            </p>
+        </div>
+        <div>
+            <p><b>Using Arrow function</b></p>
+            <p>
+                const getArrowValue = (p1) => {
+                return 10*p1;
+                }<br>
+                console.log(getArrowValue(3));
+            </p>
+        </div>
+
+        <div><h1>Filter Function </h1></div>
+        <h3>filter() does not execute the function for array elements without values</h3>
+        <h3>filter() does not change the original Array </h3>
+        <p>Syntax: array.filter(
+            function (fnValue*, index!,arr!), thisValue! 
+            )</p>
+        <div>
+            var agesArray = [10,20,30,40];
+            <br>
+            const checkAdult = (age) => {
+                return age>=18;
+            } 
+            <br>
+            const filterMethod = () => {
+                return agesArray.filter(checkAdult);
+            }
+            <br>
+            console.log(filterMethod());
+        </div>
+
+    </div>
+</body>
+</html>
